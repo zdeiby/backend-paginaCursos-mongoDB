@@ -1,7 +1,9 @@
 const express = require('express');
-const message = require('../components/message/network')
+const users = require('../components/users/network')
+const articles = require('../components/articles/network')
 
 const routes= function(server){
-    server.use('/message',message)
+    server.use('/users',users)
+    server.use('/articles',articles)
 }
 module.exports= routes;

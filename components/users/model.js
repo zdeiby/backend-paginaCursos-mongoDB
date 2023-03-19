@@ -20,5 +20,5 @@ const mySchema = new Schema({
     date: Date,
 });
 
-const model=mongoose.model('Message', mySchema);
+const model=mongoose.model('users', mySchema);
 module.exports = model;
